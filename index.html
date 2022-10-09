@@ -1,0 +1,556 @@
+﻿
+
+<!doctype html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/js.js"></script>
+	
+	<title></title>
+
+   <script type="text/javascript">
+  
+         
+function goPAGE() {
+  if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+    window.location.href="mobile-index.html";
+}
+ 
+}
+goPAGE();
+       
+
+</script>
+
+	<style type="text/css">
+	
+		
+		.section-wrap{ width:100%;height:100%;overflow:visible;transition:transform 1s cubic-bezier(0.86,0,0.03,1);-webkit-transition:-webkit-transform 1s cubic-bezier(0.86,0,0.03,1);}
+
+		.section-wrap .section{ position:relative; width:100%; height:100%; background-position:center center; background-repeat:no-repeat; padding-top: 
+			200px;}
+
+		.section-wrap .section .title{color:#fff; }
+		.titY{position: relative;}
+
+		.section-wrap .section .title p{}
+
+		.section-wrap .section .title.active .tit{ opacity:1;transform:translateY(-25px);-webkit-transform:translateY(-25px);transition:all 2s cubic-bezier(0.86,0,0.8,1);-webkit-transition:all 2s cubic-bezier(0.86,0,0.8,1);
+		font-family:"微软雅黑","Microsoft YaHei","黑体";}
+
+		.section-wrap .section-1{height:100%:; background: url('images/bg1.jpg') center center no-repeat;  background-size: cover;
+ width: 100%;}
+
+		.section-wrap .section-2{ height:100%:; background: url('images/bg2.jpg') center center no-repeat;  background-size: cover;
+ width: 100%;}
+		.title h2 , .title h3{font-family: '微软雅黑';}
+
+		.section-wrap .section-3{ height:100%:; background: url('images/bg3.jpg') center center no-repeat;  background-size: cover;
+ width: 100%;}
+
+		.section-wrap .section-4{ height:100%:; background: url('images/bg4.jpg') center center no-repeat;  background-size: cover;
+ width: 100%;}
+
+		.section-wrap .section-5{ height:100%:; background: url('images/bg5.jpg') center center no-repeat;  background-size: cover;
+ width: 100%;}
+
+		.put-section-0{ transform:translateY(0);-webkit-transform:translateY(0);}
+
+		.put-section-1{ transform:translateY(-100%);-webkit-transform:translateY(-100%);}
+
+		.put-section-2{ transform:translateY(-200%);-webkit-transform:translateY(-200%);}
+
+		.put-section-3{ transform:translateY(-300%);-webkit-transform:translateY(-300%);}
+
+		.put-section-4{ transform:translateY(-400%);-webkit-transform:translateY(-400%);}
+
+		.section-btn{ width:14px;position:fixed;right:4%;top:50%;}
+		/* .fot{font-size: 6.8rem;}
+		  		.fot1{font-size: 4.8rem;} */
+  		.phe{position: absolute; top:-120px; right:-130px;}
+		.section-btn li{ width:10px;height:10px;cursor:pointer;text-indent:-9999px;border-radius:50%;-webkit-border-radius:50%;margin-bottom:12px; background:rgba(255,255,255,0.3);text-align:center; color:#fff; cursor:pointer;}
+
+		.section-btn li.on{ background:#fff;}
+		.title h3{letter-spacing: 2px;}
+		
+		.arrow{ opacity:1;animation:arrow 3s cubic-bezier(0.5,0,0.1,1) infinite;-webkit-animation:arrow 3s cubic-bezier(0.5,0,0.1,1) infinite; position:absolute;bottom:10px;left:50%;margin-left:-30px;line-height:60px;text-align:center;font-size:20px;cursor:pointer;overflow:hidden;}
+		.section-2 h4{color: #fa4c4c; font-size:6rem; letter-spacing:4px; margin-left: 5px;margin-bottom: 30px;}
+		.section-2 h5{color: #939dfe; font-size: 4rem;letter-spacing:4px; margin-left: 5px;}
+		.section-4 h4{color: #fa4c4c; font-size:6rem; letter-spacing:4px; margin-left: 5px;margin-bottom: 30px;}
+		.section-4 h5{color: #939dfe; font-size: 4rem;letter-spacing:4px; margin-left: 5px;}
+		.section-5 h4{color: #fa4c4c; font-size:6rem; letter-spacing:4px; margin-left: 5px;margin-bottom: 30px;}
+		.section-5 h5{color: #939dfe; font-size: 4rem;letter-spacing:4px; margin-left: 5px;}
+		.arrow:hover{ animation-play-state:paused;-webkit-animation-play-state:paused;}
+		.section-3 h4{color: #fa4c4c; font-size:6rem; letter-spacing:4px; margin-right: 5px;margin-bottom: 30px;}
+		.section-3 h5{color: #b9e6ff; font-size: 4rem;letter-spacing:4px; margin-right: 5px;}
+		.img1{position: absolute; top:410px; right:-45px;}
+		.img2{position: absolute; bottom:-243px; left:79px;}
+		.img3{position: absolute; bottom:-135px; left:163px;}
+		.img4{position: absolute; bottom:-367px; left:143px;}
+		.img5{position: absolute; bottom:-248px; left:315px;}
+		.fiv{position: absolute; left: 0; top: 0;}
+		
+		.fot{font-size: 6.8rem;}
+		.fot1{font-size: 4.5rem;}
+
+
+
+		@keyframes arrow{ %0,%100{bottom:10px; opacity:1;} 50%{bottom:50px; opacity:.5;} }
+
+		@-webkit-keyframes arrow{ %0,%100{bottom:10px; opacity:1;} 50%{bottom:50px; opacity:.5;} }
+		 @media (max-width: 1366px) { 
+		 		.fot{font-size: 5.5rem;}
+		 		.fot1{font-size: 3.5rem;}
+		 		.phe{right:10px; top: -160px;  width: 650px;}
+		 		.img1{right:135px; top:299px; width: 120px;}
+		 		.img2{left:-16px; bottom:-199px; width: 110px;}
+		 		.img3{left: 76px; bottom: -80px; width: 120px;}
+		 		.img4{left:52px; bottom: -270px; width: 120px;}
+		 		.img5{left:208px; bottom: -190px; width: 110px;}
+		 		.section-2 h4{ font-size:5.5rem; letter-spacing:2px; margin-left: 5px;margin-bottom: 30px;}
+				.section-2 h5{ font-size: 3.5rem;letter-spacing:2px; margin-left: 5px;}
+				.section-4 h4{ font-size:5.5rem; letter-spacing:2px; margin-left: 5px;margin-bottom: 30px;}
+				.section-4 h5{ font-size: 3.5rem;letter-spacing:2px; margin-left: 5px;}
+				.section-5 h4{ font-size:5.5rem; letter-spacing:2px; margin-left: 5px;margin-bottom: 30px;}
+				.section-5 h5{ font-size: 3.5rem;letter-spacing:2px; margin-left: 5px;}
+				.section-3 h4{ font-size:5.5rem; letter-spacing:2px; margin-right: 5px;margin-bottom: 30px;}
+				.section-3 h5{ font-size: 3.5rem;letter-spacing:2px; margin-right: 5px;}
+				.box1{width: 87px;}
+				.box2{ width: 128px;}
+				.box3{ width: 165px;}
+				.box4{width: 600px; margin-bottom: 30px;}
+				.sec2-lef{margin-top: 0;}
+				.tom{width: 600px;}
+				.tom1{width: 150px;}
+				.tom2{width: 180px;}
+				.tom3{width: 180px;}
+				.sec3{margin-top: -35px;}
+				.fou{width: 750px;}
+				.sec4-right{margin-top: 40px;}
+				.sec5{margin-top: -70px;}
+				.fiv{width: 750px;}
+				@keyframes bn2
+					{
+					  0%   {right: 125px; top: 13px; opacity: 0;}
+					  
+					  100% {right: 145px; top: -52px; opacity: 1;}
+					} 
+					@-webkit-keyframes bn2
+					{
+					  0%   {right: 125px; top: 13px; opacity: 0;}
+					  
+					  100% {right: 145px; top: -52px; opacity: 1;}
+					} 
+					@keyframes bn3
+						{
+						  0%   {right: 125px; top: 13px; opacity: 0;}
+						  
+						  100% {top: -109px; right:0; opacity: 1;}
+						} 
+						@-webkit-keyframes bn3
+						{
+						  0%   {right: 125px; top: 13px; opacity: 0;}
+						  
+						  100% {top: -109px; right: 0; opacity: 1;}
+						} 
+						@keyframes an1
+							{
+							  0%   {left: 235px; top: 127px; opacity: 0;}
+							  
+							  100% {left: 228px; top: 115px; opacity: 1;}
+							} 
+							@-webkit-keyframes an1
+							{
+							  0%   {left: 235px; top: 127px; opacity: 0;}
+							  
+							  100% {left: 228px; top: 115px; opacity: 1;}
+							}
+						@keyframes an2
+								{
+								  0%   {left: 211px; top: 83px; opacity: 0;}
+								  
+								  100% {left: 130px; top: 34px; opacity: 1;}
+								} 
+								@-webkit-keyframes an2
+								{
+								  0%   {left: 211px; top: 83px; opacity: 0;}
+								  
+								  100% {left: 130px; top: 34px; opacity: 1;}
+								}
+						@keyframes an3
+							{
+							  0%   {left: 212px; top: 83px; opacity: 0;}
+							  
+							  100% {left: 160px; top: 57px; opacity: 1;}
+							} 
+							@-webkit-keyframes an3
+							{
+							  0%   {left: 212px; top: 83px; opacity: 0;}
+							  
+							  100% {left: 160px; top: 57px; opacity: 1;}
+							}
+							@keyframes fn1
+							{
+							 0%   {left: 190px; top: 57px; opacity: 0;}
+							 
+							 100% {left: 208px; top: -30px; opacity: 1;}
+							} 
+							@-webkit-keyframes fn1
+							{
+							 0%   {left: 190px; top: 57px; opacity: 0;}
+							 
+							 100% {left: 208px; top: -30px; opacity: 1;}
+							} 
+							 @keyframes fn2
+							{
+							 0%   {left: 302px; top: 112px; opacity: 0;}
+							 
+							 100% {left: 356px; top: 20px; opacity: 1;}
+							} 
+							 @keyframes fn3
+							{
+							 0%   {left: 302px; top: 112px; opacity: 0;}
+							 
+							 100% {left: 337px; top: -50px; opacity: 1;}
+							} 
+							 @keyframes ar1
+								{
+								0%   {left: 330px; top: 139px;}
+								
+								100% {left: 313px; top: 133px; }
+								} 
+								@-webkit-keyframes ar1
+								{
+								0%   {left: 330px; top: 139px;}
+								
+								100% {left: 313px; top: 133px; }
+								}
+								@keyframes ar2
+									{
+									0%   {left: 303px; top: 169px;}
+									
+									100% {left: 325px; top: 167px; }
+									} 
+									@-webkit-keyframes ar2
+									{
+									0%   {left: 303px; top: 169px;}
+									
+									100% {left: 325px; top: 167px; }
+									}
+
+
+				 		}
+	</style>
+
+	<!--[if lte IE 8]>
+
+	<style type="text/css">
+
+		html,body{width:100%; height:100%; overflow:scroll}
+
+		.section-btn{display:none;}
+
+	</style>
+
+	<![endif]-->
+
+</head>
+
+<body>
+	 <header>
+  		<nav class="navbar navbar-default navbar-fixed-top " role="navigation" style="background: transparent;  border:none;">
+    		<div class="container" id="daohang">
+      		 	<div class="navbar-header header-logo">
+         			<a class="navbar-brand" href="javascript:void(0);"><img src="images/logo.png" class="img-responsive" style="margin-top: 20px;"></a>
+       			</div>
+       			<div class="collapse navbar-collapse" id="navbar_collapse">
+        			<ul class="nav navbar-nav menu1 header-nav menu-nav clearfix collapse-menu" style="float:right;margin-right:30%;">
+        			   <li class="on"><a href="javascript:void(0);">首页</a></li>
+        			   <li class="li_first"><a href="charge.html">费率标准</a></li>
+        			   <li class="li_second"><a href="User protocol.html">用户协议</a></li>
+        			  
+        			 </ul>
+      			</div>
+      			<div class="site_meau_toggle">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar_collapse" aria-expanded="false">
+           			<span class="sr-only">Toggle navigation</span>
+           			<span class="icon-bar"></span>
+           			<span class="icon-bar"></span>
+           			<span class="icon-bar"></span>
+         			</button>
+      			</div>
+    		</div>
+  		</nav>
+	</header>
+
+
+	<section class="section-wrap">
+
+		<div class="section section-1">
+
+			<div class="container active">
+
+				<div class="col-md-7 title">
+					<h3 class="tit fot">众享钱包</h3>
+					<h3 class="tit fot1">基于<span style="color:#ff5c5c;">区块链技术</span>的数字货币</h3>
+					<h3 class="tit fot1">交易平台</h3>
+					<a href="">
+						<div style="" class="IOS">
+							<img src="images/apple.png"  width="40" alt="" style="float: left;margin-left:20px; margin-top:5px;" class="app">
+							<img src="images/apple1.png" alt="" width="40" style="float: left;margin-left:20px; margin-top:5px;" class="app1">
+							<div class="onz"  style="float: left; margin-left:20px;">
+								<span class="download text-center" style="float: left;">Download on the</span><br><span style="font-size: 20px;">APP Store</span>							</div>
+						</div>
+					</a>
+					<a href="">
+						<div style="" class="andro">
+							<img src="images/and.png" height="42" alt="" style="float: left;margin-left:20px; margin-top:5px;" class="and">
+							<img src="images/and1.png" height="42" style="float: left;margin-left:20px; margin-top:5px;" alt="" class="and1">
+							<div class="onz"  style="float: left; margin-left:20px;">
+								<span class="download text-center" style="float: left;"> Download on the</span><br><span style="font-size: 20px;">Google Play</span>							</div>
+						</div>
+					</a>				</div>
+				<div class="col-md-5 titY">
+					<img src="images/ph-en.png"  alt="" width="760" style="" class="phe"> 
+					<img src="images/img1.png"  alt=""  class="img1">
+					<img src="images/img2.png"  alt=""  class="img2">
+					<img src="images/img3.png"  alt=""	class="img3">
+					<img src="images/img4.png"  alt=""	class="img4">
+					<img src="images/img5.png"  alt=""	class="img5">				</div>
+			</div>
+		</div>
+
+		<div class="section section-2">
+
+			<div class="container">
+
+				<div class="col-md-7 sec2-lef"  style="">
+					<img src="images/box1.png" width="117" alt="" class="box1">
+					<img src="images/box2.png" width="158" alt="" class="box2">
+					<img src="images/box3.png" width="185" alt="" class="box3">
+					<img src="images/bgim2.png"  width="645" alt="" class="box4">				</div>
+				<div class="col-md-5 title" style="margin-top: 140px;padding-right:0;">
+					<h4 class="tit">安全</h4>
+					<h5 class="tit">用户本地存储钱包文件</h5>
+					<h5 class="tit">安全有保障</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section-3">
+
+			<div class="container sec3">
+
+				
+				<div class="col-md-8" style="padding-right:0;position:relative; width:63%;">
+					<img src="images/inp2.png"  width="700" alt="" class="tom">
+					<img src="images/tom1.png" width="175" alt="" class="tom1">
+					<img src="images/tom2.png" width="200" alt="" class="tom2">
+					<img src="images/tom3.png" width="200" alt="" class="tom3">				</div>
+				<div class="col-md-4 title"  style="margin-top: 120px;padding-left:0; width:37%;">
+					
+					<h4 class="tit">专业</h4>
+					<h5 class="tit">丰富的币币交换功能</h5>
+					<h5 class="tit">想你所得 得你所想</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section-4">
+
+			<div class="container">
+
+				<div class="col-md-6"  style="margin-top: 25px;padding-left:0;position:relative; ">
+					<img src="images/fou.png"  width="900" alt="" class="fou">
+					<img src="images/f1.png"  width="130" alt="" class="f1">
+					<img src="images/f2.png"  width="130" alt="" class="f2">
+					<img src="images/f3.png"  width="108" alt="" class="f3">				</div>
+				<div class="col-md-6 title sec4-right" style=" ">
+					<h4 class="tit">快捷</h4>
+					<h5 class="tit">每秒万单的高性能交易引擎</h5>
+					<h5 class="tit">快捷方便</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section-5">
+			<div class="container sec5">
+
+				<div class="col-md-7"  style="margin-top: 0;padding-left:0;position:relative; ">
+					<img src="images/fiv.png"  width="850" alt="" class="fiv">
+					<img src="images/arr1.png" width="59" alt="" class="arr1">
+					<img src="images/arr2.png" width="59" alt="" class="arr2">				</div>
+				<div class="col-md-5 title" style="margin-top: 170px;padding-right:0; ">
+					<h4 class="tit">贴心</h4>
+					<h5 class="tit">全网超低手续费</h5>
+					<h5 class="tit">贴心有保障</h5>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<ul class="section-btn">
+
+	  <li class="on"></li>
+
+	  <li></li>
+
+	  <li></li>
+
+	  <li></li>
+
+	  <li></li>
+
+	</ul>
+
+	<div class="arrow"><img src="images/ar.png" width="65" alt=""></div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	//此处引用：鼠标滚轮mousewheel插件
+
+	!function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a:a(jQuery)}(function(a){function b(b){var g=b||window.event,h=i.call(arguments,1),j=0,l=0,m=0,n=0,o=0,p=0;if(b=a.event.fix(g),b.type="mousewheel","detail"in g&&(m=-1*g.detail),"wheelDelta"in g&&(m=g.wheelDelta),"wheelDeltaY"in g&&(m=g.wheelDeltaY),"wheelDeltaX"in g&&(l=-1*g.wheelDeltaX),"axis"in g&&g.axis===g.HORIZONTAL_AXIS&&(l=-1*m,m=0),j=0===m?l:m,"deltaY"in g&&(m=-1*g.deltaY,j=m),"deltaX"in g&&(l=g.deltaX,0===m&&(j=-1*l)),0!==m||0!==l){if(1===g.deltaMode){var q=a.data(this,"mousewheel-line-height");j*=q,m*=q,l*=q}else if(2===g.deltaMode){var r=a.data(this,"mousewheel-page-height");j*=r,m*=r,l*=r}if(n=Math.max(Math.abs(m),Math.abs(l)),(!f||f>n)&&(f=n,d(g,n)&&(f/=40)),d(g,n)&&(j/=40,l/=40,m/=40),j=Math[j>=1?"floor":"ceil"](j/f),l=Math[l>=1?"floor":"ceil"](l/f),m=Math[m>=1?"floor":"ceil"](m/f),k.settings.normalizeOffset&&this.getBoundingClientRect){var s=this.getBoundingClientRect();o=b.clientX-s.left,p=b.clientY-s.top}return b.deltaX=l,b.deltaY=m,b.deltaFactor=f,b.offsetX=o,b.offsetY=p,b.deltaMode=0,h.unshift(b,j,l,m),e&&clearTimeout(e),e=setTimeout(c,200),(a.event.dispatch||a.event.handle).apply(this,h)}}function c(){f=null}function d(a,b){return k.settings.adjustOldDeltas&&"mousewheel"===a.type&&b%120===0}var e,f,g=["wheel","mousewheel","DOMMouseScroll","MozMousePixelScroll"],h="onwheel"in document||document.documentMode>=9?["wheel"]:["mousewheel","DomMouseScroll","MozMousePixelScroll"],i=Array.prototype.slice;if(a.event.fixHooks)for(var j=g.length;j;)a.event.fixHooks[g[--j]]=a.event.mouseHooks;var k=a.event.special.mousewheel={version:"3.1.12",setup:function(){if(this.addEventListener)for(var c=h.length;c;)this.addEventListener(h[--c],b,!1);else this.onmousewheel=b;a.data(this,"mousewheel-line-height",k.getLineHeight(this)),a.data(this,"mousewheel-page-height",k.getPageHeight(this))},teardown:function(){if(this.removeEventListener)for(var c=h.length;c;)this.removeEventListener(h[--c],b,!1);else this.onmousewheel=null;a.removeData(this,"mousewheel-line-height"),a.removeData(this,"mousewheel-page-height")},getLineHeight:function(b){var c=a(b),d=c["offsetParent"in a.fn?"offsetParent":"parent"]();return d.length||(d=a("body")),parseInt(d.css("fontSize"),10)||parseInt(c.css("fontSize"),10)||16},getPageHeight:function(b){return a(b).height()},settings:{adjustOldDeltas:!0,normalizeOffset:!0}};a.fn.extend({mousewheel:function(a){return a?this.bind("mousewheel",a):this.trigger("mousewheel")},unmousewheel:function(a){return this.unbind("mousewheel",a)}})});
+
+	
+
+	$(function(){
+
+		var i=0;
+
+		var $btn = $('.section-btn li'),
+
+			$wrap = $('.section-wrap'),
+
+			$arrow = $('.arrow');
+
+		
+
+		/*当前页面赋值*/
+
+		function up(){i++;if(i==$btn.length){i=0};}
+
+		function down(){i--;if(i<0){i=$btn.length-1};}
+
+		
+
+		/*页面滑动*/
+
+		function run(){
+
+			$btn.eq(i).addClass('on').siblings().removeClass('on');	
+
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.title').addClass('active');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.tom1').addClass('tom-an1');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.tom2').addClass('tom-an2');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.tom3').addClass('tom-an3');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.box1').addClass('box-an1');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.box2').addClass('box-an2');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.box3').addClass('box-an3');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.f1').addClass('f-fn1');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.f2').addClass('f-fn2');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.f3').addClass('f-fn3');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.arr1').addClass('ar-fn1');
+			$wrap.attr("class","section-wrap").addClass(function() { return "put-section-"+i; }).find('.section').eq(i).find('.arr2').addClass('ar-fn2');
+
+		};
+
+		
+
+		/*右侧按钮点击*/
+
+		$btn.each(function(index) {
+
+			$(this).click(function(){
+
+				i=index;
+
+				run();
+
+			})
+
+		});
+
+		
+
+		/*翻页按钮点击*/
+
+		$arrow.one('click',go);
+
+		function go(){
+
+			up();run();	
+
+			setTimeout(function(){$arrow.one('click',go)},1000)
+
+		};
+
+		
+
+		/*响应鼠标*/
+
+		$wrap.one('mousewheel',mouse_);
+
+		function mouse_(event){
+
+			if(event.deltaY<0) {up()}
+
+			else{down()}
+
+			run();
+
+			setTimeout(function(){$wrap.one('mousewheel',mouse_)},1000)
+
+		};
+
+		
+
+		/*响应键盘上下键*/
+
+		$(document).one('keydown',k);
+
+		function k(event){
+
+			var e=event||window.event;
+
+			var key=e.keyCode||e.which||e.charCode;
+
+			switch(key)	{
+
+				case 38: down();run();	
+
+				break;
+
+				case 40: up();run();	
+
+				break;
+
+			};
+
+			setTimeout(function(){$(document).one('keydown',k)},1000);
+
+		}
+
+	});
+
+</script>
+
+
+</body>
+
+</html>
