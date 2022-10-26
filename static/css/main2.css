@@ -3143,13 +3143,13 @@ button.swiper-pagination-bullet {
 }
 @media only screen and (max-width: 992px) {
   .hero-top {
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; */
   }
 }
 .hero-description {
