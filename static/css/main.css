@@ -1260,7 +1260,7 @@ a {
 	font-family: Manrope;
 	font-weight: 500;
 	font-style: normal;
-	src: url(../font/Manrope-Medium.woff2) format('woff2'), url(../font/Manrope-Medium.woff) format('woff'), url(https://www.17sucai.com/preview/1097306/2021-07-23/ryen/fonts/Manrope-Medium.ttf) format('truetype');
+	src: /* url(../font/Manrope-Medium.woff2) format('woff2'), */ url(../font/Manrope-Medium.woff) format('woff'), url(https://www.17sucai.com/preview/1097306/2021-07-23/ryen/fonts/Manrope-Medium.ttf) format('truetype');
 	font-display: swap
 }
 
@@ -3080,7 +3080,7 @@ button.swiper-pagination-bullet {
 
 @media only screen and (max-width:1559px) {
 	.about__skill-desc-two {
-		margin-bottom: 40px
+		margin-bottom: 20px
 	}
 }
 
@@ -4869,7 +4869,7 @@ button.swiper-pagination-bullet {
 	-webkit-box-align: center;
 	align-items: center;
 	-ms-flex-align: center;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 120%
 }
 
@@ -4880,7 +4880,7 @@ button.swiper-pagination-bullet {
 }
 
 .header__links li:not(:last-child) {
-	margin-right: 150px
+	margin-right: 50px
 }
 
 @media only screen and (min-width:993px) {

@@ -11643,8 +11643,8 @@ let swiper2 = new Swiper('.swiper-container2', {
 			}), e(this, 'initListeners', function() {
 				window.addEventListener('mousemove', n.trackPosition);
 			}), e(this, 'add', function(t) {
-				(new Image().src = t.dataset.cursor), t.addEventListener('mousemove', n.show), t.addEventListener(
-					'mouseleave', n.hide);
+				// (new Image().src = t.dataset.cursor), t.addEventListener('mousemove', n.show), t.addEventListener(
+				// 	'mouseleave', n.hide);
 			}), e(this, 'show', function(t) {
 				n.isActive || (clearTimeout(n.timer), (n.isActive = !0), (n.container.style.backgroundImage = 'url('.concat(
 					t.currentTarget.dataset.cursor, ')')), n.container.classList.add('active'));
