@@ -5353,3 +5353,11 @@ margin-left: 3px;}
 	  @media screen and (max-width: 992px) and (min-width:460px){
 	.home-author__name.yincang{display: none;}
 	.wzh2{font-size: 55px;}}
+	
+	@media screen and (max-width: 1601px) and (min-width:1024px){
+.about__work-info{margin-top:60px;}
+.header__wrapper{padding: 25px 70px;}
+.manrope-text2{font-size: 16px;}
+.swiper-button-wrapper{top: 40px;}
+.works__card{height: 580px;}
+}
